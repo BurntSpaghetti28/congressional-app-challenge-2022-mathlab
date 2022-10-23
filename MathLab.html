@@ -79,7 +79,7 @@
                     var val2 = getRandom(100) * 100;
                     if (val1 > val2) {
                         document.getElementById("question").innerText = val1 + " - " + val2;
-                        currentAnswer = val1 * val2;
+                        currentAnswer = val1 - val2;
                     }
                     else {
                         document.getElementById("question").innerText = val2 + " - " + val1;
@@ -310,7 +310,6 @@
                     else {
                         val1 = (getRandom(6) + 1) * 5;
                         xCoord = (getRandom(6) + 1) * 5;
-                        if (val1 == 0) val1 = 5;
                         totalText = "y = x / " + val1;
                         currentAnswer = xCoord / val1;
                     }
